@@ -1,0 +1,31 @@
+﻿@model PracticeIdentity.Models.UserLoginViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post" asp-action="login" asp-controller="Auth">
+                 
+               
+                <div class="form-group mt-2">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email Here" asp-for="Email">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password Here" asp-for="Password">
+                </div>
+
+                 <button type="submit" class="btn btn-primary d-grid gap-2 mx-auto w-25 mt-3 ">Login</button>
+                <p class="text-muted mt-3 text-center"><b>If Don't Account! </b><a href="@Url.Action("signup", "Auth")" class="text-success text-decoration-none"><b>Click For Registeration</b></a></p>
+     
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@* <h2 class="text-info text-center mt-3">Customer Details</h2> *@
+
+<h2 class="text-info text-center mt-3">@ViewBag.CustomerName  DETAILS</h2>
+
+<div id="button" class="float-end"></div>
+<div id="checkPopup"></div>
+<div id="dataGrid" class="mt-5"></div>
+<div id="checkoutPopup"></div>
+@* 
+
+<div id="deletePopup"></div>
+<div id="editPopup"></div> *@
+<script src="~/js/cdetails.js"></script>
+
+
+
+
+
+@* <div class="col mt-4">
+    <table class="table mx-auto">
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Customer Name</th>
+                <th>Mobile Number</th>
+                <th>Nationality</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>Id Proof</th>
+                <th>Address</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+                <th>Room Number</th>
+                <th>Room Type</th>
+                <th>Bed</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+           @foreach (Employee employee in Model)
+        {
+        <tr>
+        <td>@employee.Id</td>
+        <td>@employee.Name</td>
+        <td>@employee.Gender</td>
+        <td>@employee.Designation</td>
+        </tr>
+        } 
+
+    </table>
+</div> *@
+
